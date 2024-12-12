@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+body{
+    background: linear-gradient(to left, rgb(9, 132, 189), rgb(11, 76, 216));
+    text-align: center;
+}
+
+.inputArea{
+    margin-top: 20px;
+}
+
+#inputTarea{
+    width: 30%;
+    height: 30px;
+    color: black;
+}
+
+#botonAgregar{
+    width: 100px;
+    height: 40px;
+    color: rgb(19, 122, 219);
+    border: none;
+    background-color: rgb(180, 180, 180);
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+#botonAgregar:hover{
+    background-color: rgb(0, 38, 255);
+    color: white;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+#listaDeTareas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.textareaDiv{
+    list-style: none;
+    background-color: rgb(180, 180, 180);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textareaDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px; /* Ajusta el espacio entre los elementos según sea necesario */
+}
+
+.textareaDiv textarea {
+    grid-column: span 2; /* Hace que el textarea ocupe las dos columnas */
+}
+
+.textareaDiv i {
+    color: rgb(0, 38, 255);
+    align-self: center; /* Centra verticalmente los spans */
+}
+
+.textoTarea{
+    height: 100px;
+    border: none;
+    color: rgb(0, 38, 255);
+    text-align: center;
+    background-color: rgb(180, 180, 180);
+    resize: none;
+    margin: 10px;
+}
